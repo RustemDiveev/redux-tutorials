@@ -11,6 +11,8 @@ export const AddPostForm = () => {
 
     const dispatch = useDispatch()
 
+    const users = useSelector(state => state.users)
+
     const onTitleChanged = e => setTitle(e.target.value)
     const onContentChanged = e => setContent(e.target.value)
     const onAuthorChanged = e => setUserId(e.target.value)
